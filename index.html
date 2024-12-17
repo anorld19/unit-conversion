@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Unit Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="converter-card">
+      <h1 class="title"> Unit Converter</h1>
+      <p class="subtitle">Quickly convert between different units</p>
+
+      <div class="dropdown-group">
+        <label for="unitType">Select Category:</label>
+        <select id="unitType">
+          <option value="length">Length</option>
+          <option value="weight">Weight</option>
+          <option value="temperature">Temperature</option>
+        </select>
+      </div>
+
+      <div class="conversion-box">
+        <input type="number" id="inputValue" placeholder="Enter value">
+        <div class="dropdown-pair">
+          <select id="fromUnit"></select>
+          <span class="arrow">⟶</span>
+          <select id="toUnit"></select>
+        </div>
+      </div>
+
+      <button id="convertBtn" class="convert-btn">Convert</button>
+
+      <div class="result-box">
+        <p>Result:</p>
+        <span id="output">-</span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
